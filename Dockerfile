@@ -19,6 +19,8 @@ RUN pip install --upgrade pip
 
 RUN pip install --upgrade --no-cache-dir python-openstackclient==${OPENSTACK_CLI_VERSION}
 
+RUN pip install --upgrade python-designateclient
+
 RUN apk del gcc musl-dev linux-headers
 
 RUN rm -rf /var/cache/apk/*
