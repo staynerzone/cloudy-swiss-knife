@@ -11,6 +11,7 @@ RUN apk add --update \
   gcc \
   musl-dev \
   linux-headers \
+  curl \
   jq;
 
 ENV OPENSTACK_CLI_VERSION "3.16.1"
